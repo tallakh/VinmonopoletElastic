@@ -1,8 +1,8 @@
 # VinmonopoletElastic
-Index product data from Vinmonopolet to Elasticsearch
+Index product data from Systembolaget to Elasticsearch
 
-# Elasticsearch/Kibana Vinmonopolet demo
-This project contains scripts and tools for Vinmonopolet demo.
+# Elasticsearch/Kibana Systembolaget demo
+This project contains scripts and tools for Systembolaget demo.
 
 ## Prerequisites
 #### Java 8 installed
@@ -23,10 +23,10 @@ From the unzipped directories, run the following commands. (alternatively double
 
 Go to http://localhost:9200 and http://localhost:5601 in your browser to ensure you get a response.
 
-## Index data from Vinmonopolet
+## Index data from Systembolaget
 Open cmd, bash, powershell or similar and change directory to the checked out source.
 Now, run logstash to feed data into elastic . (Adjust path to logstash to where you unzipped it)
--  C:\elastic\logstash-5.3.1\bin\logstash.bat -f .\vinMonopoletCsvFileLogstash.conf.txt
+-  C:\elastic\logstash-5.3.1\bin\logstash.bat -f .\systembolagetCsvFileLogstash.conf.txt
 
-Verify that you have data by opening http://localhost:9200/vinmonopolet/_search 
-(Should be 16000-ish total documents)
+Verify that you have data by opening http://localhost:9200/systembolaget/_search
+(Should be 18897-ish total documents)
